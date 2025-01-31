@@ -1,0 +1,80 @@
+/* Switch */
+.switch {
+  position: fixed;
+  margin-top: 400px;
+  margin-left: 5%;
+  width: 42px;
+  height: 85px;
+  cursor: pointer;
+  overflow: hidden; /* Asegura que el contenido no sobresalga */
+  border-radius: 20px; /* Redondea el borde del switch */
+}
+
+/* Fondo del switch */
+.switch-bg {
+  width: 42px;
+  height: 85px;
+  border-radius: 90px;
+  transition: fill 0.3s;
+}
+
+/* Indicador deslizante */
+.switch-slider {
+  position: absolute;
+  left: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 90%; /* Asegura que sea un círculo */
+  background-color: white;
+  transition: transform 0.3s, top 0.3s;
+}
+
+/* Posición del indicador (claro/oscuro) */
+.switch-slider.light {
+  top: 6px;
+  background-color: #2a9d8f;
+}
+
+.switch-slider.dark {
+    top: 46px;
+    background-color: #264653;
+    
+  }
+
+.switch-slider.light::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "☀️";
+    width: 100%;
+    height: 100%;
+}
+
+.switch-slider.dark::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "🌙";
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Texto del ícono */
+.switch-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: top 0.3s;
+}
+
+/* Posición del ícono (Sol/Luna) */
+.switch-icon.light {
+  top: 48px;
+}
+.switch-icon.dark {
+  top: 11px;
+}

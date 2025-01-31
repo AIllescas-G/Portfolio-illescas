@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Contenedor principal */
+.background {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  transition: background 0.3s;
+}
+
+/* Modo oscuro */
+.background.dark {
+  width: 100%;
+  background-color: #111827;
+}
