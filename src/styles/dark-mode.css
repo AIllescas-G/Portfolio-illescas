@@ -1,8 +1,7 @@
 /* Switch */
 .switch {
   position: fixed;
-  margin-top: 400px;
-  margin-left: 5%;
+  top:20%;
   width: 42px;
   height: 85px;
   cursor: pointer;
@@ -33,28 +32,36 @@
 .switch-slider.light {
   top: 6px;
   background-color: #2a9d8f;
+  
 }
 
 .switch-slider.dark {
     top: 46px;
     background-color: #264653;
     
+    
   }
 
 .switch-slider.light::after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: "☀️";
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  background-image: url('../assets/svg/u_sun.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .switch-slider.dark::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    content: "🌙";
+    content: "";
+    background: url('../assets/svg/u_moon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100%;
 }
