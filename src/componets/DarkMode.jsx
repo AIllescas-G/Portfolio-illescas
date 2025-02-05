@@ -6,7 +6,7 @@ export const DarkMode = () => {
   const { darkMode, setDarkMode } = useTheme();
 
   return (
-    <div className="container">
+    <div className="container md:hidden ">
       <label className="switch " onClick={() => setDarkMode(!darkMode)}>
         <svg>
           <rect className="switch-bg" fill={darkMode ? "#2A9D8F" : "#264653"} />

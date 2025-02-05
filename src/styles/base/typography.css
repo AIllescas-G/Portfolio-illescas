@@ -1,0 +1,74 @@
+@import url("./variables.css");
+
+/* src/styles/typography.css */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-p);
+  color: var(--black);
+}
+
+/* 🌟 Encabezados */
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+}
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+}
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+}
+h4 {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-medium);
+}
+h5 {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-bold);
+}
+h6 {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+}
+
+/* 📖 Párrafos */
+p {
+  font-size: var(--font-size-p);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-light);
+  letter-spacing: 0rem;
+}
+
+/* 📌 Textos adicionales (según la guía NSS) */
+.s3 {
+  font-size: var(--font-size-s3);
+  font-weight: var(--font-weight-normal);
+}
+.s2 {
+  font-size: var(--font-size-s2);
+  font-weight: var(--font-weight-normal);
+}
+.s1 {
+  font-size: var(--font-size-s1);
+  font-weight: var(--font-weight-normal);
+}
+
+/* 💬 Utilidades de texto */
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+.text-medium {
+  font-weight: var(--font-weight-medium);
+}
+.text-light {
+  font-weight: var(--font-weight-light);
+}
+.text-center {
+  text-align: center;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}

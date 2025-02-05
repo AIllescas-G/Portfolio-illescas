@@ -1,0 +1,145 @@
+:root {
+  /* Escala de grises */
+  --black: #29303d;
+  --gray1: #4a576e;
+  --gray2: #6b7d9d;
+  --gray3: #9da9bd;
+  --gray4: #cdd3dd;
+  --gray5: #f0f2f5;
+  --background: #f0f2f5;
+  --white: #ffffff;
+
+  /* Colores de notificación */
+  --info: #5c96fa;
+  --info-dark: #1f60d1;
+  --info-light: #cedffd;
+  --success-dark: #3a6732;
+  --success: #68cc55;
+  --success-light: #dcf3d8;
+  --danger: #da2f37;
+  --danger-dark: #a51d24;
+  --danger-light: #f7d4d6;
+  --warning-dark: #d5880b;
+  --warning: #f8bb59;
+  --warning-light: #fdebce;
+
+  /* Colores de marca */
+  --brand-secondary-light: #e9c46a;
+  --brand-secondary: #f4a261;
+  --brand-secondary-dark: #e76f51;
+  --brand-darker: #00415c;
+  --brand-dark-gradient: linear-gradient(180deg, #020c1b 0%, #041937 100%);
+  --brand: #264653;
+  --brand-light: #2a9d8f;
+  --brand-lighter: #b6c1d4;
+
+  /* Tipografía */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --line-height: 1.5;
+  --line-height-heading: 1.25;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+
+  /* Tamaños de fuente */
+  --font-size-xs: 0.664rem;
+  --font-size-sm: 0.761rem;
+  --font-size-md: 0.872rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.123rem;
+  --font-size-xxl: 1.313rem;
+  --font-size-title-sm: 1.92rem;
+  --font-size-title-md: 2.4rem;
+  --font-size-title-lg: 3rem;
+
+  /* Spacing */
+  --d6: 0.25rem;
+  --d5: 0.3rem;
+  --d4: 0.375rem;
+  --d3: 0.5rem;
+  --d2: 0.75rem;
+  --d1_2: 1rem;
+  --x1: 1.5rem;
+  --x1_2: 2.25rem;
+  --x2: 3rem;
+  --x3: 4.5rem;
+  --x4: 6rem;
+  --x5: 7.5rem;
+  --x6: 9rem;
+
+  /* 📝 Tipografía */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+
+  /* 🔠 Tamaños de Fuente */
+  --font-size-s3: 0.664rem; /* Smallest Text */
+  --font-size-s2: 0.761rem; /* Smaller Text */
+  --font-size-s1: 0.873rem; /* Small Text */
+  --font-size-p: 1rem; /* Normal Text */
+  --font-size-h6: 1rem; /* Small Heading */
+  --font-size-h5: 1.146rem; /* Medium Heading */
+  --font-size-h4: 1.313rem; /* Large Heading */
+  --font-size-h3: 1.505rem; /* Small Title */
+  --font-size-h2: 1.725rem; /* Medium Title */
+  --font-size-h1: 2.977rem; /* Large Title */
+
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    /* 🔠 Tamaños de Fuente */
+    --font-size-s3: 0.664rem; /* Smallest Text */
+    --font-size-s2: 0.761rem; /* Smaller Text */
+    --font-size-s1: 0.873rem; /* Small Text */
+    --font-size-p: 1rem; /* Normal Text */
+    --font-size-h6: 1rem; /* Small Heading */
+    --font-size-h5: 1.146rem; /* Medium Heading */
+    --font-size-h4: 1.313316rem; /* Large Heading */
+    --font-size-h3: 1.50506rem; /* Small Title */
+    --font-size-h2: 1.724799rem; /* Medium Title */
+    --font-size-h1: 1.97662rem; /* Large Title */
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    /* 🔠 Tamaños de Fuente */
+    --font-size-s3: 0.664rem; /* Smallest Text */
+    --font-size-s2: 0.761rem; /* Smaller Text */
+    --font-size-s1: 0.873rem; /* Small Text */
+    --font-size-p: 1rem; /* Normal Text */
+    --font-size-h6: 1rem; /* Small Heading */
+    --font-size-h5: 1.146rem; /* Medium Heading */
+    --font-size-h4: 1.313rem; /* Large Heading */
+    --font-size-h3: 1.505rem; /* Small Title */
+    --font-size-h2: 1.725rem; /* Medium Title */
+    --font-size-h1: 1.977rem; /* Large Title */
+  }
+
+  /* Tablets (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 998px) {
+    /* 🔠 Tamaños de Fuente */
+    --font-size-s3: 0.664rem; /* Smallest Text */
+    --font-size-s2: 0.761rem; /* Smaller Text */
+    --font-size-s1: 0.873rem; /* Small Text */
+    --font-size-p: 1rem; /* Normal Text */
+    --font-size-h6: 1rem; /* Small Heading */
+    --font-size-h5: 1.146rem; /* Medium Heading */
+    --font-size-h4: 1.313rem; /* Large Heading */
+    --font-size-h3: 1.505rem; /* Small Title */
+    --font-size-h2: 1.725rem; /* Medium Title */
+    --font-size-h1: 1.977rem; /* Large Title */
+  }
+
+  /* 🏋️ Pesos de Fuente */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* 🔡 Espaciado de Letras */
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-tight: -0.02em;
+
+  /* 📐 Altura de Línea */
+  --line-height-base: 1.5;
+  --line-height-heading: 1.25;
+}

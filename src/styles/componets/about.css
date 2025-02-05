@@ -1,0 +1,29 @@
+.container-about {
+
+    .title {
+      color: var(--brand-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-weight: var(--font-weight-semibold);
+      margin-top: 20px;
+      
+      &::before {
+        content: " ";
+        width: var(--x2);
+        height: 1px;
+        background-color: var(--brand-secondary);
+        margin-right: var(--d1_2);
+      }
+    }
+    
+    .p {
+      margin-top: var(--d1_2);
+      font-weight: 200;
+      b {
+        font-weight: var(--font-weight-normal);
+      }
+    }
+    
+  }
+

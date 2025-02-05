@@ -1,0 +1,37 @@
+.container-training {
+  .title {
+    color: var(--brand-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-weight: var(--font-weight-semibold);
+    margin-top: var(--x4);
+    margin-bottom: var(--x1_2);
+
+    &::before {
+      content: " ";
+      width: var(--x2);
+      height: 1px;
+      background-color: var(--brand-secondary);
+      margin-right: var(--d1_2);
+    }
+  }
+  article {
+    margin-bottom: var(--x1);
+    .title {
+        margin-bottom: var(--d3);
+    }
+    ul {
+      li {
+        margin-bottom: var(--d7);
+        .date {
+            margin-bottom: var(--d1);
+            color: var(--brand-light);
+            justify-self:flex-start;
+            margin-top: var(--d5);
+          }
+      
+      }
+    }
+  }
+}

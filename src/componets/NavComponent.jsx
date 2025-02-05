@@ -1,31 +1,42 @@
+import { useEffect, useState } from "react";
 import photo from "../assets/svg/foto.svg";
 
-
 export const NavComponent = () => {
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
+
   return (
-    <div className=" container">
-      <nav className="nav container-nav ">
-
-        <a href="" className="brand-logo">
-          <img src={photo} alt="Logo" />
+    <nav className={`navbar ${visible ? "visible" : "hidden"}`}>
+      <div className="container nav">
+        <a href="#home" className="logo">
+          <img src={photo} alt="" />
         </a>
-
-        <ul className="nav-mobile ">
-          <li className="nav-link">
-            <a href="#!">01. A cerca de mi</a>
+        
+        <ul className="nav-links">
+          <li>
+            <a href="#about">About</a>
           </li>
-          <li className="nav-link">
-            <a href="#!">02. Experiencia</a>
+          <li>
+            <a href="#projects">Projects</a>
           </li>
-          <li className="nav-link">
-            <a href="#!">03. Proyectos</a>
-          </li>
-          <li className="nav-link">
-            <a href="#!">04. Contacto</a>
+          <li>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
-
-      </nav>
-    </div>
+      </div>
+      
+    </nav>
+    
   );
 };

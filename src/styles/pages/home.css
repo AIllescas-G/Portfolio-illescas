@@ -1,0 +1,109 @@
+.home-layout {
+  margin-top: var(--x1_2);
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-gap: var(--x6);
+  padding-right: var(--x1_2);
+
+  /* Breakpoints responsivos */
+
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--x6);
+    padding-right: var(--d2);
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--x6);
+    padding-right: var(--d2);
+  }
+
+  /* Tablets (769px a 998px) */
+  @media (min-width: 769px) and (max-width: 998px) {
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: var(--x6);
+    padding-right: var(--x1_2);
+  }
+
+  .col-izq {
+    .fixed {
+      position: fixed;
+
+      /* Teléfonos pequeños (hasta 480px) */
+      @media (max-width: 480px) {
+        position: absolute;
+        display: block;
+      }
+
+      /* Teléfonos medianos (481px a 768px) */
+      @media (min-width: 481px) and (max-width: 768px) {
+        position: absolute;
+        display: block;
+      }
+
+      /* Tablets (769px a 998px) */
+      @media (min-width: 769px) and (max-width: 998px) {
+        position: absolute;
+        display: block;
+      }
+
+      .sub-title {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+
+        color: var(--brand-light);
+        &::before {
+          content: url("../../assets/svg/u_atom.svg");
+          margin-right: var(--d4);
+        }
+      }
+
+      p {
+        width: 30%;
+
+        /* Teléfonos pequeños (hasta 480px) */
+        @media (max-width: 480px) {
+          width: 92%;
+        }
+
+        /* Teléfonos medianos (481px a 768px) */
+        @media (min-width: 481px) and (max-width: 768px) {
+          width: 92%;
+        }
+
+        /* Tablets (769px a 998px) */
+        @media (min-width: 769px) and (max-width: 998px) {
+          width: 92%;
+        }
+      }
+    }
+  }
+
+  .col-der {
+    padding-bottom: var(--x3);
+    /* Teléfonos pequeños (hasta 480px) */
+    @media (max-width: 480px) {
+      margin-top: var(--x2);
+    }
+
+    /* Teléfonos medianos (481px a 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+      margin-top: var(--x2);
+    }
+
+    /* Tablets (769px a 998px) */
+    @media (min-width: 769px) and (max-width: 998px) {
+      margin-top: var(--x2);
+    }
+  }
+}

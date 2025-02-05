@@ -1,0 +1,13 @@
+
+@import './base/variables.css';
+@import './base/typography.css';
+@import './base/global.css';
+@import './componets/dark-mode.css';
+@import './componets/nav.css';
+@import './componets/about.css';
+@import './componets/experience.css';
+@import './componets/training.css';
+
+
+
+@import './pages/home.css';

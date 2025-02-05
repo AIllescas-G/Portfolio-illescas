@@ -1,0 +1,104 @@
+/* Estilos globales */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales para el contenedor */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px; /* Espaciado interno */
+  max-width: 1184px; /* Ancho máximo en pantallas grandes */
+  height: auto;
+}
+
+/* Breakpoints responsivos */
+
+/* Teléfonos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 var(--x1);
+    height: auto;
+  }
+}
+
+/* Teléfonos medianos (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 0 var(--x1);
+    height: auto;
+  }
+}
+
+/* Tablets (769px a 1024px) */
+@media (min-width: 769px) and (max-width: 998px) {
+  .container {
+    padding: 0 var(--x1_2);
+    height: auto;
+  }
+}
+
+/* Escritorio pequeño (1025px a 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    padding: 0 24px;
+    max-width: 1184px;
+    height: auto;
+  }
+}
+
+/* Escritorio grande (más de 1280px) */
+@media (min-width: 1281px) {
+  .container {
+    padding: 0 32px;
+    max-width: 1184px;
+    height: auto;
+  }
+}
+
+
+/* Contenedor principal */
+.background {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  transition: background 0.3s;
+  margin-top: 0;
+  padding-top: 120px;
+
+  a {
+    color: var(--brand-primary); 
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--brand-light);
+    }
+  }
+
+  b {
+    color: var(--black);
+    font-weight: var(--font-weight-normal);
+  }
+}
+
+/* Modo oscuro */
+.background.dark {
+  width: 100%;
+  background: var(--brand-dark-gradient);
+  color: var(--brand-lighter);
+  a {
+    color: var(--brand-primary);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--brand-secondary);
+    }
+  }
+  b {
+    color: var(--brand-lighter);
+    font-weight: var(--font-weight-normal);
+  }
+}
+
+
