@@ -39,8 +39,9 @@
   --line-height: 1.5;
   --line-height-heading: 1.25;
   --font-weight-semibold: 600;
+  --font-weight-bold: 900;
   --font-weight-medium: 500;
-  --font-weight-regular: 400;
+  --font-weight-regular: 300;
 
   /* Tamaños de fuente */
   --font-size-xs: 0.664rem;
@@ -75,7 +76,7 @@
   /* 🔠 Tamaños de Fuente */
   --font-size-s3: 0.664rem; /* Smallest Text */
   --font-size-s2: 0.761rem; /* Smaller Text */
-  --font-size-s1: 0.873rem; /* Small Text */
+  --font-size-s1: 0.9rem; /* Small Text */
   --font-size-p: 1rem; /* Normal Text */
   --font-size-h6: 1rem; /* Small Heading */
   --font-size-h5: 1.146rem; /* Medium Heading */

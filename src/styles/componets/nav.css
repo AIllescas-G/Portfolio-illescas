@@ -34,15 +34,18 @@
     .nav-links {
       list-style: none;
       display: flex;
-
       gap: 1.5rem;
 
       li {
         a {
          
           text-decoration: none;
-          font-size: 1rem;
           transition: color 0.3s;
+          b {
+            font-weight: var(--font-weight-bold);
+            font-size: var(--font-size-s3);
+            opacity: 0.4;
+          }
         }
       }
     }

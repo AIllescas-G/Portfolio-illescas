@@ -10,52 +10,41 @@ html {
   padding: 0 16px; /* Espaciado interno */
   max-width: 1184px; /* Ancho máximo en pantallas grandes */
   height: auto;
-}
 
-/* Breakpoints responsivos */
+  /* Breakpoints responsivos */
 
-/* Teléfonos pequeños (hasta 480px) */
-@media (max-width: 480px) {
-  .container {
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
     padding: 0 var(--x1);
     height: auto;
   }
-}
 
-/* Teléfonos medianos (481px a 768px) */
-@media (min-width: 481px) and (max-width: 768px) {
-  .container {
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
     padding: 0 var(--x1);
     height: auto;
   }
-}
 
-/* Tablets (769px a 1024px) */
-@media (min-width: 769px) and (max-width: 998px) {
-  .container {
+  /* Tablets (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 998px) {
     padding: 0 var(--x1_2);
     height: auto;
   }
-}
 
-/* Escritorio pequeño (1025px a 1280px) */
-@media (min-width: 1025px) and (max-width: 1280px) {
-  .container {
+  /* Escritorio pequeño (1025px a 1280px) */
+  @media (min-width: 1025px) and (max-width: 1280px) {
     padding: 0 24px;
     max-width: 1184px;
     height: auto;
   }
-}
 
-/* Escritorio grande (más de 1280px) */
-@media (min-width: 1281px) {
-  .container {
+  /* Escritorio grande (más de 1280px) */
+  @media (min-width: 1281px) {
     padding: 0 32px;
     max-width: 1184px;
     height: auto;
   }
 }
-
 
 /* Contenedor principal */
 .background {
@@ -65,10 +54,21 @@ html {
   margin-top: 0;
   padding-top: 120px;
 
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    padding-top: 60px;
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding-top: 60px;
+  }
+
   a {
-    color: var(--brand-primary); 
+    color: var(--brand-primary);
     text-decoration: none;
     transition: color 0.3s;
+    font-size: var(--font-size-s1);
 
     &:hover {
       color: var(--brand-light);
@@ -90,6 +90,7 @@ html {
     color: var(--brand-primary);
     text-decoration: none;
     transition: color 0.3s;
+    font-size: var(--font-size-s1);
 
     &:hover {
       color: var(--brand-secondary);
@@ -102,3 +103,31 @@ html {
 }
 
 
+
+.title {
+  color: var(--brand-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--x1);
+
+
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    margin: 0
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin: 0
+  }
+
+  &::before {
+    content: " ";
+    width: var(--x2);
+    height: 1px;
+    background-color: var(--brand-secondary);
+    margin-right: var(--d1_2);
+  }
+}

@@ -26,7 +26,7 @@ h4 {
 }
 h5 {
   font-size: var(--font-size-h5);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-normal);
 }
 h6 {
   font-size: var(--font-size-h6);
@@ -37,15 +37,17 @@ h6 {
 p {
   font-size: var(--font-size-p);
   line-height: 1.5;
+  font-weight: var(--font-weight-normal);
   margin-bottom: var(--spacing-md);
   font-weight: var(--font-weight-light);
-  letter-spacing: 0rem;
+  letter-spacing: 0.01rem;
 }
 
 /* 📌 Textos adicionales (según la guía NSS) */
 .s3 {
   font-size: var(--font-size-s3);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0rem;
 }
 .s2 {
   font-size: var(--font-size-s2);
@@ -53,7 +55,10 @@ p {
 }
 .s1 {
   font-size: var(--font-size-s1);
-  font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-light);
+}
+b {
+  font-weight: var(--font-weight-bold) !important;
 }
 
 /* 💬 Utilidades de texto */

@@ -3,107 +3,108 @@
   display: grid;
   grid-template-columns: 30% 1fr;
   grid-gap: var(--x6);
-  padding-right: var(--x1_2);
+  padding-right: 0;
+}
 
-  /* Breakpoints responsivos */
-
-  /* Teléfonos pequeños (hasta 480px) */
-  @media (max-width: 480px) {
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: var(--x6);
-    padding-right: var(--d2);
+/* Responsive */
+@media (max-width: 998px) {
+  .home-layout {
+      margin-top: 0;
+      grid-template-columns: 1fr;
+      padding-right: var(--d2);
+      position: relative;
+      gap: 0;
   }
+}
 
-  /* Teléfonos medianos (481px a 768px) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: var(--x6);
-    padding-right: var(--d2);
+.col-izq {
+  position: relative;
+}
+
+.col-izq .fixed {
+  position: fixed;
+  height: 100%;
+}
+
+/* Responsive: Cambiar a relativo en pantallas pequeñas */
+@media (max-width: 998px) {
+  .col-izq .fixed {
+      position: relative;
+      height: auto;
   }
+}
 
-  /* Tablets (769px a 998px) */
-  @media (min-width: 769px) and (max-width: 998px) {
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: var(--x6);
-    padding-right: var(--x1_2);
+.col-izq .logos {
+  display: flex;
+  gap: var(--d4);
+  position: absolute;
+  bottom: 188px;
+  justify-content: center;
+  z-index: 0;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 998px) {
+  .col-izq .logos {
+      position: relative;
+      top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
   }
+}
 
-  .col-izq {
-    .fixed {
-      position: fixed;
+/* ✅ ICONOS MÁS GRANDES */
+.col-izq .logos .mail {
+  font-size: 35px; /* Tamaño aumentado */
+  color: var(--brand-light); /* Asegura que mantenga su color */
+  transition: transform 0.3s ease-in-out;
+}
 
-      /* Teléfonos pequeños (hasta 480px) */
-      @media (max-width: 480px) {
-        position: absolute;
-        display: block;
-      }
-
-      /* Teléfonos medianos (481px a 768px) */
-      @media (min-width: 481px) and (max-width: 768px) {
-        position: absolute;
-        display: block;
-      }
-
-      /* Tablets (769px a 998px) */
-      @media (min-width: 769px) and (max-width: 998px) {
-        position: absolute;
-        display: block;
-      }
-
-      .sub-title {
-        display: flex;
-        justify-content: start;
-        align-items: start;
-
-        color: var(--brand-light);
-        &::before {
-          content: url("../../assets/svg/u_atom.svg");
-          margin-right: var(--d4);
-        }
-      }
-
-      p {
-        width: 30%;
-
-        /* Teléfonos pequeños (hasta 480px) */
-        @media (max-width: 480px) {
-          width: 92%;
-        }
-
-        /* Teléfonos medianos (481px a 768px) */
-        @media (min-width: 481px) and (max-width: 768px) {
-          width: 92%;
-        }
-
-        /* Tablets (769px a 998px) */
-        @media (min-width: 769px) and (max-width: 998px) {
-          width: 92%;
-        }
-      }
-    }
+/* Ajustar tamaño de iconos en tablets */
+@media (max-width: 768px) {
+  .col-izq .logos .mail {
+      font-size: 30px; /* Antes 35px */
   }
+}
 
+/* Ajustar tamaño de iconos en teléfonos pequeños */
+@media (max-width: 480px) {
+  .col-izq .logos .mail {
+      font-size: 30px; /* Antes 35px */
+  }
+}
+
+.col-izq .sub-title {
+  display: flex;
+  align-items: start;
+  color: var(--brand-light);
+  
+}
+
+.col-izq .sub-title::before {
+  content: url("../../assets/svg/u_atom.svg");
+  margin-right: var(--d4);
+}
+
+.col-izq p {
+  width: 30%;
+}
+
+/* Ajuste de ancho del párrafo en pantallas pequeñas */
+@media (max-width: 998px) {
+  .col-izq p {
+      width: 100%;
+  }
+}
+
+.col-der {
+  padding-bottom: var(--x3);
+}
+
+/* Ajuste de margen en pantallas pequeñas */
+@media (max-width: 998px) {
   .col-der {
-    padding-bottom: var(--x3);
-    /* Teléfonos pequeños (hasta 480px) */
-    @media (max-width: 480px) {
-      margin-top: var(--x2);
-    }
-
-    /* Teléfonos medianos (481px a 768px) */
-    @media (min-width: 481px) and (max-width: 768px) {
-      margin-top: var(--x2);
-    }
-
-    /* Tablets (769px a 998px) */
-    @media (min-width: 769px) and (max-width: 998px) {
-      margin-top: var(--x2);
-    }
+      margin-top: var(--d2);
   }
 }

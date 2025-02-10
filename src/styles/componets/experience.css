@@ -1,19 +1,14 @@
 .container-experience {
-  .title {
-    color: var(--brand-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--x4);
+  margin-bottom: var(--x3);
 
-    &::before {
-      content: " ";
-      width: var(--x2);
-      height: 1px;
-      background-color: var(--brand-secondary);
-      margin-right: var(--d1_2);
-    }
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    margin-bottom: var(--x2);
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: var(--x1);
   }
 
   .experience {
@@ -22,45 +17,65 @@
     grid-gap: var(--x1);
     margin-top: var(--x1_2);
 
-      /* Teléfonos pequeños (hasta 480px) */
-      @media (max-width: 480px) {
-        grid-template-columns: 1fr;
-      }
+    /* Teléfonos pequeños (hasta 480px) */
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+      margin-top: 0;
+      grid-gap: 0;
+    }
 
-      /* Teléfonos medianos (481px a 768px) */
-      @media (min-width: 481px) and (max-width: 768px) {
-        grid-template-columns: 1fr;
-      }
-
-      /* Tablets (769px a 998px) */
-      @media (min-width: 769px) and (max-width: 998px) {
-        grid-template-columns: 1fr;
-      }
-
+    /* Teléfonos medianos (481px a 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      margin-top: 0;
+      grid-gap: 0;
+    }
 
     .sub-title {
       margin-bottom: var(--d3);
     }
-    .p {
-      margin-top: var(--d1_2);
+
+    
+  .description {
+    margin-left: 10px;
+    p {
+      tab-size: 20px;
+      text-indent: -10px;
+      &::before {
+        margin-right: 4px;
+        content: " \2022 "; /* Unicode for a smaller filled circle */
+      }
     }
+  }
+
     .date {
       margin-bottom: var(--d1);
       color: var(--brand-light);
-      justify-self:flex-start;
+      justify-self: flex-start;
       margin-top: var(--d5);
+
+      /* Teléfonos pequeños (hasta 480px) */
+      @media (max-width: 480px) {
+        margin-top: var(--x1);
+      }
+
+      /* Teléfonos medianos (481px a 768px) */
+      @media (min-width: 481px) and (max-width: 768px) {
+        margin-top: var(--x1);
+      }
     }
 
     .info {
       .container-tag {
         display: flex;
         gap: var(--d3);
+
         .tag {
           display: inline-block;
           padding: 4px 8px;
           background-color: var(--brand-light);
           border-radius: 16px;
-          margin-top: var(--d2);
+          margin-top: var(--d1_2);
           color: var(--brand);
         }
       }
