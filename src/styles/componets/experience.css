@@ -13,7 +13,7 @@
 
   .experience {
     display: grid;
-    grid-template-columns: 20% 1fr;
+    grid-template-columns: 18% 1fr;
     grid-gap: var(--x1);
     margin-top: var(--x1_2);
 
@@ -35,18 +35,17 @@
       margin-bottom: var(--d3);
     }
 
-    
-  .description {
-    margin-left: 10px;
-    p {
-      tab-size: 20px;
-      text-indent: -10px;
-      &::before {
-        margin-right: 4px;
-        content: " \2022 "; /* Unicode for a smaller filled circle */
+    .description {
+      margin-left: 10px;
+      p {
+        tab-size: 20px;
+        text-indent: -10px;
+        &::before {
+          margin-right: 4px;
+          content: " \2022 "; /* Unicode for a smaller filled circle */
+        }
       }
     }
-  }
 
     .date {
       margin-bottom: var(--d1);
@@ -82,3 +81,4 @@
     }
   }
 }
+

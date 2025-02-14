@@ -9,11 +9,11 @@
 /* Responsive */
 @media (max-width: 998px) {
   .home-layout {
-      margin-top: 0;
-      grid-template-columns: 1fr;
-      padding-right: var(--d2);
-      position: relative;
-      gap: 0;
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    padding-right: var(--d2);
+    position: relative;
+    gap: 0;
   }
 }
 
@@ -29,8 +29,8 @@
 /* Responsive: Cambiar a relativo en pantallas pequeñas */
 @media (max-width: 998px) {
   .col-izq .fixed {
-      position: relative;
-      height: auto;
+    position: relative;
+    height: auto;
   }
 }
 
@@ -46,11 +46,11 @@
 /* Ajustes para móviles */
 @media (max-width: 998px) {
   .col-izq .logos {
-      position: relative;
-      top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: left;
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
   }
 }
 
@@ -64,14 +64,14 @@
 /* Ajustar tamaño de iconos en tablets */
 @media (max-width: 768px) {
   .col-izq .logos .mail {
-      font-size: 30px; /* Antes 35px */
+    font-size: 30px; /* Antes 35px */
   }
 }
 
 /* Ajustar tamaño de iconos en teléfonos pequeños */
 @media (max-width: 480px) {
   .col-izq .logos .mail {
-      font-size: 30px; /* Antes 35px */
+    font-size: 30px; /* Antes 35px */
   }
 }
 
@@ -79,7 +79,6 @@
   display: flex;
   align-items: start;
   color: var(--brand-light);
-  
 }
 
 .col-izq .sub-title::before {
@@ -94,17 +93,18 @@
 /* Ajuste de ancho del párrafo en pantallas pequeñas */
 @media (max-width: 998px) {
   .col-izq p {
-      width: 100%;
+    width: 100%;
   }
 }
 
 .col-der {
   padding-bottom: var(--x3);
+  z-index: 10;
 }
 
 /* Ajuste de margen en pantallas pequeñas */
 @media (max-width: 998px) {
   .col-der {
-      margin-top: var(--d2);
+    margin-top: var(--d2);
   }
 }

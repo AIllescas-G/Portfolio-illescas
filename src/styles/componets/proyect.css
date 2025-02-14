@@ -1,0 +1,62 @@
+.container-poyect {
+  margin-top: var(--x3);
+  .proyect {
+    display: grid;
+    grid-template-columns: 18% 1fr;
+    grid-gap: var(--x1);
+    margin-top: var(--d1);
+    align-items: center;
+    justify-content: center;
+    padding: var(--d2);
+    
+   
+
+     /* Teléfonos pequeños (hasta 480px) */
+     @media (max-width: 480px) {
+      display: block;
+      padding: 0;
+    }
+
+    /* Teléfonos medianos (481px a 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+      display: block;
+      
+      padding: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.2); /* Blanco con 20% de opacidad */
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      
+
+      /* Teléfonos pequeños (hasta 480px) */
+      @media (max-width: 480px) {
+        width: 45%;
+        height: 90%;
+        margin-bottom: var(--x1);
+      }
+
+      /* Teléfonos medianos (481px a 768px) */
+      @media (min-width: 481px) and (max-width: 768px) {
+        width: 45%;
+        height: 90%;
+        margin-bottom: var(--x1);
+      }
+    }
+   
+  }
+  .info {
+    h6{
+      color: var(--brand-light);
+    }
+  }
+}

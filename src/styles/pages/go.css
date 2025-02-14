@@ -1,0 +1,87 @@
+.container-video {
+  padding-top: var(--x1_2);
+  display: grid;
+  grid-template-columns: 18% 1fr;
+
+  /* Ajustar tamaño de iconos en tablets */
+
+  /* Ajustar tamaño de iconos en teléfonos pequeños */
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    padding: 0 var(--x5) 0 var(--x5);
+    @media (max-width: 480px) {
+      padding: 0;
+    }
+    p {
+      margin-bottom: -18px;
+      @media (max-width: 480px) {
+        margin-bottom: -8px;
+      }
+    }
+    h1 {
+      font-size: 90px;
+      margin-bottom: var(--x1_2);
+
+      @media (max-width: 480px) {
+        font-size: 50px;
+        margin-bottom: var(--d1);
+      }
+    }
+
+    h2 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+    h6 {
+      font-weight: 300;
+    }
+
+
+    .info {
+      margin-bottom: var(--x1_2);
+      width: 100%;
+
+      @media (max-width: 480px) {
+        margin-bottom: var(--x2);
+        width: 100%;
+      }
+    }
+
+    .content {
+      .text-contexto {
+        margin-bottom: var(--x4);
+        h4 {
+          font-weight: 300;
+          margin-bottom: var(--x1_2);
+        }
+        p {
+          margin-bottom: var(--x1);
+        }
+        h3 {
+          margin-bottom: var(--d1);
+        }
+      }
+
+      .img {
+        margin-top: -46px;
+        padding: 0 0 0 0;
+        padding: 0;
+        margin-bottom: var(--x4);
+        
+        img {
+          width: 900px;
+        }
+      }
+
+      .img-colum {
+        padding: 0 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: var(--x1);
+      }
+    }
+  }
+}

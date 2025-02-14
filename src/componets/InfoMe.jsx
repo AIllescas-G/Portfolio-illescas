@@ -9,7 +9,7 @@ import { RiMailAddFill } from "react-icons/ri";
 
 export const InfoMe = () => {
   return (
-    <div className="col-izq">
+    <div  className="col-izq">
       <div className="fixed">
         <h1>Antonio Illescas</h1>
         <p className="mt-d1 mb-d2 sub-title">

@@ -9,32 +9,46 @@ body {
 
 /* 🌟 Encabezados */
 h1 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-medium);
+  
 }
 h2 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-medium);
 }
 h3 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-h3);
   font-weight: var(--font-weight-medium);
 }
 h4 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-h4);
   font-weight: var(--font-weight-medium);
 }
 h5 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-h5);
   font-weight: var(--font-weight-normal);
 }
 h6 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-h6);
   font-weight: var(--font-weight-medium);
 }
 
 /* 📖 Párrafos */
 p {
+  
   font-size: var(--font-size-p);
   line-height: 1.5;
   font-weight: var(--font-weight-normal);
@@ -45,19 +59,28 @@ p {
 
 /* 📌 Textos adicionales (según la guía NSS) */
 .s3 {
+
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-s3);
   font-weight: var(--font-weight-medium);
   letter-spacing: 0rem;
 }
 .s2 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-s2);
   font-weight: var(--font-weight-normal);
 }
 .s1 {
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
   font-size: var(--font-size-s1);
-  font-weight: var(--font-weight-light);
+  font-weight: var(--font-weight-normal);
 }
 b {
+
+
   font-weight: var(--font-weight-bold) !important;
 }
 
@@ -76,4 +99,8 @@ b {
 }
 .text-uppercase {
   text-transform: uppercase;
+}
+
+a {
+  cursor: pointer;
 }

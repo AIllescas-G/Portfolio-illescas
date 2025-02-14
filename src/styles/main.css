@@ -7,7 +7,11 @@
 @import './componets/about.css';
 @import './componets/experience.css';
 @import './componets/training.css';
+@import './componets/proyect.css';
 
 
 
 @import './pages/home.css';
+@import './pages/go.css';
+@import './pages/moverick.css';
+@import './pages/nav-proyects.css';

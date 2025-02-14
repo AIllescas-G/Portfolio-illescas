@@ -6,8 +6,8 @@
   --gray3: #9da9bd;
   --gray4: #cdd3dd;
   --gray5: #f0f2f5;
-  --background: #f0f2f5;
-  --white: #ffffff;
+  --background: #fdfeff;
+  --white: #e7eaf1;
 
   /* Colores de notificación */
   --info: #5c96fa;
@@ -60,6 +60,7 @@
   --d4: 0.375rem;
   --d3: 0.5rem;
   --d2: 0.75rem;
+  --d1: 0.75rem;
   --d1_2: 1rem;
   --x1: 1.5rem;
   --x1_2: 2.25rem;
@@ -74,9 +75,9 @@
     sans-serif;
 
   /* 🔠 Tamaños de Fuente */
-  --font-size-s3: 0.664rem; /* Smallest Text */
-  --font-size-s2: 0.761rem; /* Smaller Text */
-  --font-size-s1: 0.9rem; /* Small Text */
+  --font-size-s3: 0.764rem; /* Smallest Text */
+  --font-size-s2: 0.861rem; /* Smaller Text */
+  --font-size-s1: 1rem; /* Small Text */
   --font-size-p: 1rem; /* Normal Text */
   --font-size-h6: 1rem; /* Small Heading */
   --font-size-h5: 1.146rem; /* Medium Heading */
@@ -134,7 +135,7 @@
   --font-weight-light: 300;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --font-weight-bold: 600;
 
   /* 🔡 Espaciado de Letras */
   --letter-spacing-wide: 0.05em;

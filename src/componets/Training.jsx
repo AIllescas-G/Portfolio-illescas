@@ -1,56 +1,57 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
+import { training } from "../data/training";
 
-export default function Training() {
+const TrainingItem = ({ category, courses }) => (
+  <div className="training-category">
+    {courses.map((course, index) => (
+      <div className="container-training" key={index}>
+        <p className="date">
+          <span className="s1">{course.date}</span>
+        </p>
+        <div className="description">
+          <p className="s1">
+            {course.title} <b>{course.institution}</b>
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
+export const Training = () => {
+  const [isTitleVisible, setIsTitleVisible] = useState(false);
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsTitleVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 } // Detecta cuando el 50% del título es visible
+    );
+
+    if (titleRef.current) {
+      observer.observe(titleRef.current);
+    }
+
+    return () => {
+      if (titleRef.current) {
+        observer.unobserve(titleRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="container-training">
-      <h1 className="s1 title">FORMACIÓN ACADÉMICA & CERTIFICACIONES</h1>
-
-      <article>
-        <h6 className="sub-title">Desarrollo Frontend & Diseño UX/UI</h6>
-        <ul>
-          <li className="s1">
-            <span className="date">2023 - 2025</span> Certificación en Frontend
-            Development |<b>Academia CodeSpace</b> 
-          </li>
-          <li className="s1">
-            <span className="date">2023</span> Certificación en Digital Product
-            Design | <b>The Hero Camp</b>
-          </li>
-          <li className="s1">
-            <span className="date">2018 - 2019 </span> Curso en Usabilidad y
-            Experiencia de Usuario (500h) | <b>Fundación UNED</b>
-          </li>
-        </ul>
-      </article>
-
-      <article>
-        <h6 className="sub-title">Desarrollo Web & Metodologías Ágiles</h6>
-        <ul>
-          <li className="s1">
-            <span className="date"> 2015 - 2016</span> Bootcamp de Desarrollo Web
-            Inmersivo | <b>CoSfera</b>
-          </li>
-          <li className="s1">
-            <span className="date"> 2010 - 2011 </span> Certificación en Community
-            Management & Social Media Strategy | <b>Instituto Internacional de
-            Marketing</b>
-          </li>
-        </ul>
-      </article>
-
-      <article>
-        <h6 className="sub-title">Diseño Gráfico & Producción Multimedia</h6>
-        <ul>
-          <li className="s1">
-            <span className="date"> 2004 - 2006 </span> Especialización en Diseño
-            Gráfico y Producción Multimedia | <b>Escuela de Arte</b>
-          </li>
-          <li className="s1">
-            <span className="date"> 2002 - 2004</span> Técnico Superior en
-            Gráficas Publicitarias | <b>Escuela de Arte y Oficios</b>
-          </li>
-        </ul>
-      </article>
-    </section>
+    <div id="tra" className="container-training">
+      <p
+        ref={titleRef}
+        className={`title mb-x1_2 ${isTitleVisible ? "scrolled" : ""}`}
+      >
+        FORMACIÓN ACADÉMICA & CERTIFICACIONES
+      </p>
+      {training.map((item, index) => (
+        <TrainingItem key={index} {...item} />
+      ))}
+    </div>
   );
-}
+};

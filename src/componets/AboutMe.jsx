@@ -1,9 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function AboutMe() {
+
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        const titleElement = document.querySelector(".title");
+        if (titleElement) {
+          const rect = titleElement.getBoundingClientRect();
+          setIsScrolled(rect.top <= 50); // Cambia de estilo si el título está cerca de la parte superior
+        }
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
   return (
-    <section className="container-about">
-      <h1 className="s1 title">SOBRE MÍ</h1>
+    <section  id="home" className="container-about">
+      <h1 className={`s1 title ${! isScrolled ? "scrolled" : ""} `}>SOBRE MÍ</h1>
 
       <article>
         <p className="p">

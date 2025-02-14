@@ -1,6 +1,7 @@
 import AboutMe from "../AboutMe";
 import { Experience } from "../Experience";
-import Training from "../Training";
+import { Proyect } from "../Proyect";
+import {Training} from '../Training'
 
 
 export default function LayoutRight() {
@@ -9,6 +10,7 @@ export default function LayoutRight() {
       <AboutMe />
       <Experience />
       <Training/>
+      <Proyect/>
     </div>
    
   );
