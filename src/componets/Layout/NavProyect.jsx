@@ -7,20 +7,20 @@ export default function NavProyect() {
   return (
     <nav className="nav">
       <ul className="ul">
-        <li className={`items s2 ${location.pathname === "/moverick" ? "active" : ""}`}>
-          <NavLink to="/moverick">MOVERICK</NavLink>
+        <li className={`nav-items s2 ${location.pathname === "/moverick" ? "active" : ""}`}>
+          <NavLink to="/moverick">Moverick</NavLink>
         </li>
-        <li className={`items s2 ${location.pathname === "/go" ? "active" : ""}`}>
-          <NavLink to="/go">GO-CERTIUS</NavLink>
+        <li className={`nav-items s2 ${location.pathname === "/go" ? "active" : ""}`}>
+          <NavLink to="/go">GO-Certius</NavLink>
         </li>
-        <li className={`items s2 ${location.pathname === "/icired" ? "active" : ""}`}>
+        <li className={`nav-items s2 ${location.pathname === "/icired" ? "active" : ""}`}>
           <NavLink to="/icired">ICIRED</NavLink>
         </li>
-        <li className={`items s2 ${location.pathname === "/meka" ? "active" : ""}`}>
+        <li className={`nav-items s2 ${location.pathname === "/meka" ? "active" : ""}`}>
           <NavLink to="/meka">MEKA</NavLink>
         </li>
-        <li className={`items s2 ${location.pathname === "/subbetica" ? "active" : ""}`}>
-          <NavLink to="/subbetica">SUBBETICA</NavLink>
+        <li className={`nav-items s2 ${location.pathname === "/subbetica" ? "active" : ""}`}>
+          <NavLink to="/subbetica">Subbetica</NavLink>
         </li>
       </ul>
     </nav>

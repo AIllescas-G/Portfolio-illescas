@@ -35,7 +35,7 @@ export const Proyect = () => {
         </div>
       </Link>
 
-      <Link to="/go" className="proyect">
+      <Link to="/" className="proyect">
         <img src={go} alt="" />
         <div className="info">
           <h6>GO Certius (Garrigues)</h6>
@@ -46,7 +46,7 @@ export const Proyect = () => {
         </div>
       </Link>
 
-      <Link to="/go" className="proyect">
+      <Link to="/" className="proyect">
         <img src={icired} alt="" />
         <div className="info">
           <h6>ICIRED</h6>
@@ -57,27 +57,6 @@ export const Proyect = () => {
         </div>
       </Link>
 
-      <Link to="/go" className="proyect">
-        <img src={icired} alt="" />
-        <div className="info">
-          <h6>ICIRED</h6>
-          <p className="s1">
-            Mejora de la experiencia de usuario en una plataforma de gestión de
-            impagos, facilitando la interacción con los clientes.
-          </p>
-        </div>
-      </Link>
-
-      <Link to="/go" className="proyect">
-        <img src={icired} alt="" />
-        <div className="info">
-          <h6>ICIRED</h6>
-          <p className="s1">
-            Mejora de la experiencia de usuario en una plataforma de gestión de
-            impagos, facilitando la interacción con los clientes.
-          </p>
-        </div>
-      </Link>
     </div>
   );
 };

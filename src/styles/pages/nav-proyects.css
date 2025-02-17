@@ -1,53 +1,51 @@
-.container-info {
-    .nav {
-        .ul {
-          position: fixed;
-          display: block;
-          @media (max-width: 480px) {
-            display: none;
-          }
-          .items {
-            color: var(--brand);
-            margin-bottom: var(--d1);
-            display: flex;
-            justify-items: center;
-            align-items: center;
-            gap: var(--d4);
-            cursor: pointer;
-    
-            &::before {
-              content: " ";
-              height: 1px;
-              width: var(--d1);
-              background-color: var(--brand);
-            }
-          }
-    
-    
-    
-          .items:hover {
-            color: var(--brand-light);
-            font-weight: 800;
-    
-            &::after {
-              content: " ";
-              height: 1px;
-              width: var(--x1);
-              background-color: var(--brand-light);
-            }
-          }
-    
-          .items.active {
-            color: var(--brand-secondary) !important ;
-            font-weight: 800;
-          
-            &::after {
-              content: " ";
-              height: 1px;
-              width: var(--x1);
-              background-color: var(--brand-secondary);
-            }
-          }
-        }
-      }
+.container-info .nav ul.ul {
+  position: fixed;
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .container-info .nav ul.ul {
+    display: none;
+  }
+}
+
+.container-info .nav ul.ul .nav-items {
+  color: var(--brand);
+  margin-bottom: var(--d1);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: var(--d4);
+  cursor: pointer;
+}
+
+.container-info .nav ul.ul .nav-items,
+.container-info .nav ul.ul .nav-items * {
+  font-size: 14px !important;
+}
+
+
+
+.container-info .nav ul.ul .nav-items:hover {
+  color: var(--brand-light);
+  font-weight: 800;
+}
+
+.container-info .nav ul.ul .nav-items:hover::after {
+  content: " ";
+  height: 1px;
+  width: var(--x1);
+  background-color: var(--brand-light);
+}
+
+.container-info .nav ul.ul .nav-items.active {
+  color: var(--brand-secondary) !important;
+  font-weight: 800;
+}
+
+.container-info .nav ul.ul .nav-items.active::after {
+  content: " ";
+  height: 1px;
+  width: var(--x1);
+  background-color: var(--brand-secondary);
 }

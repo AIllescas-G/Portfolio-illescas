@@ -47,7 +47,7 @@ export default function Moverick() {
               <iframe
                 className="project__video"
                 width="100%"
-                height="408px"
+                height="409px"
                 src="https://www.youtube-nocookie.com/embed/22WAC3guCOk?autoplay=1&mute=1&loop=1&playlist=l6nXomzoerA&enablejsapi=1"
                 frameBorder="0"
                 allow="autoplay; encrypted-media; picture-in-picture"
