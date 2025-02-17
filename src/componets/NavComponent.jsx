@@ -37,32 +37,16 @@ export const NavComponent = () => {
   }, [location]);
 
   return (
-    
     <nav className={`navbar md:hidden ${visible ? "visible" : "plus"}`}>
       <div className="container nav">
         <Link to="/">
-          <img className={`logo ${visible ? "visible" : "plusLogo"}`} src={photo} alt="Logo" />
+          <h5>{"{Antonio Illescas}"}</h5>
         </Link>
 
         <ul className="nav-links">
           <li>
             <Link to="/#home">
-              <b>01.</b> Acerca de mí
-            </Link>
-          </li>
-          <li>
-            <Link to="/#ex">
-              <b>02.</b> Experiencia
-            </Link>
-          </li>
-          <li>
-            <Link to="/#tra">
-              <b>04.</b> Formación
-            </Link>
-          </li>
-          <li>
-            <Link to="/#pro">
-              <b>05.</b> Proyectos
+              <h6>Acerca de mí</h6> 
             </Link>
           </li>
         </ul>

@@ -1,6 +1,7 @@
 /* Estilos globales */
 html {
   scroll-behavior: smooth;
+  font-size:16px
 }
 
 /* Estilos generales para el contenedor */
@@ -64,16 +65,7 @@ html {
     padding-top: 60px;
   }
 
-  a {
-    color: var(--brand-primary);
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: var(--font-size-s1);
 
-    &:hover {
-      color: var(--brand-light);
-    }
-  }
 
   b {
     color: var(--black);
@@ -134,16 +126,7 @@ html {
   width: 100%;
   background: var(--brand-dark-gradient);
   color: var(--white);
-  a {
-    color: var(--brand-primary);
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: var(--font-size-s1);
 
-    &:hover {
-      color: var(--brand-secondary);
-    }
-  }
   b {
     color: var(--brand-primary);
     font-weight: var(--font-weight-normal);
@@ -178,7 +161,16 @@ html {
   .white {
     color: white;
   }
-
+  a {
+    cursor: pointer;
+    color: var(--white);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    font-weight: var(--font-weight-semibold);
+    color: var(--white);
+  }
 
 }
  
