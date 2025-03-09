@@ -26,7 +26,8 @@ export const NavComponent = () => {
         const element = document.getElementById(sectionId);
         if (element) {
           const offset = 200; // Ajustar distancia de desplazamiento
-          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY;
           window.scrollTo({
             top: elementPosition - offset,
             behavior: "smooth",
@@ -37,18 +38,30 @@ export const NavComponent = () => {
   }, [location]);
 
   return (
-    <nav className={`navbar md:hidden ${visible ? "visible" : "plus"}`}>
+    <nav className={`navbar  ${visible ? "visible" : "plus"}`}>
       <div className="container nav">
         <Link to="/">
-          <h5>{"{Antonio Illescas}"}</h5>
+          <h5 className="logo">
+            <span className="acent">{"{"}</span>
+            Antonio Illescas
+            <span className="acent">{"}"}</span>
+          </h5>
         </Link>
 
         <ul className="nav-links">
-          <li>
-            <Link to="/#home">
-              <h6>Acerca de mí</h6> 
-            </Link>
-          </li>
+          {location.pathname === "/" ? (
+            <li>
+              <Link to="/illescas">
+                <h6>Acerca de mí</h6>
+              </Link>
+            </li>
+          ) : (
+            <li>
+              <Link to="/">
+                <h6>Trabajos</h6>
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
     </nav>

@@ -1,7 +1,9 @@
 /* Estilos globales */
 html {
   scroll-behavior: smooth;
-  font-size:16px
+  font-size: 16px;
+  font-family: "Geist", serif;
+  font-optical-sizing: auto;
 }
 
 /* Estilos generales para el contenedor */
@@ -53,72 +55,15 @@ html {
   background-color: var(--background);
   transition: background 0.3s;
   margin-top: 0;
-  padding-top: 120px;
 
-  /* Teléfonos pequeños (hasta 480px) */
-  @media (max-width: 480px) {
-    padding-top: 60px;
+  section {
+    margin: 0 auto;
+    padding-bottom: var(--x2);
   }
 
-  /* Teléfonos medianos (481px a 768px) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    padding-top: 60px;
+  .section-title {
+    margin-bottom: var(--x1);
   }
-
-
-
-  b {
-    color: var(--black);
-    font-weight: var(--font-weight-normal);
-  }
-
-  .title {
-    color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--x1);
-
-    /* Teléfonos pequeños (hasta 480px) */
-    @media (max-width: 480px) {
-      margin: 0;
-    }
-
-    /* Teléfonos medianos (481px a 768px) */
-    @media (min-width: 481px) and (max-width: 768px) {
-      margin: 0;
-    }
-  }
-
-  .title.scrolled {
-    color: var(--brand-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--x1);
-
-    /* Teléfonos pequeños (hasta 480px) */
-    @media (max-width: 480px) {
-      margin: 0;
-    }
-
-    /* Teléfonos medianos (481px a 768px) */
-    @media (min-width: 481px) and (max-width: 768px) {
-      margin: 0;
-    }
-
-    &::before {
-      content: " ";
-      width: var(--x2);
-      height: 1px;
-      background-color: var(--brand-secondary);
-      margin-right: var(--d1_2);
-    }
-  }
-
-
 }
 
 /* Modo oscuro */
@@ -127,53 +72,33 @@ html {
   background: var(--brand-dark-gradient);
   color: var(--white);
 
-  b {
-    color: var(--brand-primary);
-    font-weight: var(--font-weight-normal);
-  }
-
-  .title.scrolled {
-    color: var(--brand-secondary);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--x1);
-
-    &::before {
-      content: " ";
-      width: var(--x2);
-      height: 1px;
-      background-color: var(--brand-secondary);
-      margin-right: var(--d1_2);
-    }
-  }
-
-  .title {
-    color: var(--brand-primary);
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    font-weight: var(--font-weight-semibold);
-    margin-top: var(--x1);
-  }
-
   .white {
     color: white;
   }
   a {
-    cursor: pointer;
     color: var(--white);
   }
-  
+
   a:hover {
-    text-decoration: underline;
-    font-weight: var(--font-weight-semibold);
     color: var(--white);
   }
-
 }
- 
 
+.background-space {
+  padding-top: 200px !important;
 
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    padding-top: 120px !important;
+  }
 
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding-top: 120px !important;
+  }
+
+  /* Tablets (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 998px) {
+    padding-top: 120px !important;
+  }
+}

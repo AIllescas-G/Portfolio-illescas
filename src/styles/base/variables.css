@@ -1,7 +1,7 @@
 :root {
   /* Escala de grises */
   --black: #131314;
-  --gray1: #4a576e;
+  --gray1: #666666;
   --gray2: #6b7d9d;
   --gray3: #9da9bd;
   --gray4: #cdd3dd;
@@ -42,6 +42,7 @@
   --font-weight-bold: 900;
   --font-weight-medium: 400;
   --font-weight-regular: 300;
+  --font-weight-medium-2: 500;
 
   /* Tamaños de fuente */
  
@@ -53,30 +54,37 @@
   --font-size-h5: calc(var(--font-size-p) * 1.125);
   --font-size-h4: calc(var(--font-size-p) * 1.25);
   --font-size-h3: 1.75rem;
-  --font-size-h2: calc(var(--font-size-p) * 1.75);
+  --font-size-h2: 2.75rem;
   --font-size-h1: 4.5rem;
 
   /* Ajustes responsivos con clamp */
   --font-size-p-clamp: clamp(1rem, 2vw, var(--font-size-p));
-  --font-size-h1-clamp: clamp(2rem, 5vw, var(--font-size-h1));
+  --font-size-h1-clamp: clamp(2.4rem, 5vw, var(--font-size-h1));
   --font-size-h2-clamp: clamp(1.75rem, 4vw, var(--font-size-h2));
   --font-size-h3-clamp: clamp(1.5rem, 3.5vw, var(--font-size-h3));
   --font-size-h4-clamp: clamp(1.25rem, 3vw, var(--font-size-h4));
 
-  /* Espaciado */
-  --d6: 0.25rem;
-  --d5: 0.3rem;
-  --d4: 0.375rem;
-  --d3: 0.5rem;
-  --d2: 0.75rem;
-  --d1: 0.75rem;
-  --d1_2: 1rem;
-  --x1: 1.5rem;
-  --x1_2: 2.25rem;
-  --x2: 3rem;
-  --x3: 4.5rem;
-  --x4: 6rem;
-  --x5: 7.5rem;
-  --x6: 9rem;
+  /* Espaciado responsivo */
+  --d6: clamp(0.25rem, 1vw, 0.5rem);
+  --d5: clamp(0.3rem, 1vw, 0.6rem);
+  --d4: clamp(0.375rem, 1.2vw, 0.75rem);
+  --d3: clamp(0.5rem, 1.5vw, 1rem);
+  --d2: clamp(0.75rem, 2vw, 1.5rem);
+  --d1: clamp(1rem, 2.5vw, 2rem);
+  --d1_2: clamp(1.25rem, 3vw, 2.5rem);
+  --x1: clamp(1.5rem, 3.5vw, 3rem);
+  --x1_2: clamp(2.25rem, 4vw, 4.5rem);
+  --x2: clamp(3rem, 5vw, 6rem);
+  --x3: clamp(4.5rem, 6vw, 9rem);
+  --x4: clamp(6rem, 7vw, 12rem);
+  --x5: clamp(7.5rem, 8vw, 15rem);
+  --x6: clamp(9rem, 9vw, 18rem);
+
+
+    /* Interlineado responsivo */
+  --line-height-body: clamp(1.4, 2vw, 1.75);
+  --line-height-heading: clamp(1.2, 1.8vw, 1.5);
 }
+
+
 

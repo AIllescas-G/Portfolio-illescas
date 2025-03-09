@@ -1,103 +1,107 @@
 /* Switch */
-.switch {
-  display: block;
-  position: fixed;
-  top: 420px;
-  width: 32px;
-  height: 70px;
-  cursor: pointer;
-  overflow: hidden; /* Asegura que el contenido no sobresalga */
-  border-radius: 20px; /* Redondea el borde del switch */
-  z-index: 2;
 
-  /* Teléfonos pequeños (hasta 480px) */
-  @media (max-width: 480px) {
-    top: 90px;
+.switch-container {
+  margin-left: -58px;
+  .switch {
+    display: block;
+    position: fixed;
+    top: 448px;
+    width: 32px;
+    height: 70px;
+    cursor: pointer;
+    overflow: hidden; /* Asegura que el contenido no sobresalga */
+    border-radius: 20px; /* Redondea el borde del switch */
+    z-index: 2;
+
+    /* Teléfonos pequeños (hasta 480px) */
+    @media (max-width: 480px) {
+      top: 90px;
+    }
+
+    /* Teléfonos medianos (481px a 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+      top: 90px;
+    }
+
+    /* Tablets (769px a 1024px) */
+    @media (min-width: 769px) and (max-width: 998px) {
+      display: none;
+      top: 90px;
+    }
   }
 
-  /* Teléfonos medianos (481px a 768px) */
-  @media (min-width: 481px) and (max-width: 768px) {
-    top: 90px;
+  /* Fondo del switch */
+  .switch-bg {
+    width: 32px;
+    height: 70px;
+    border-radius: 90px;
+    transition: fill 0.3s;
   }
 
-  /* Tablets (769px a 1024px) */
-  @media (min-width: 769px) and (max-width: 998px) {
-    display: none;
-    top: 90px;
+  /* Indicador deslizante */
+  .switch-slider {
+    position: absolute;
+    left: 3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 90%; /* Asegura que sea un círculo */
+    background-color: white;
+    transition: transform 0.3s, top 0.3s;
   }
-}
 
-/* Fondo del switch */
-.switch-bg {
-  width: 32px;
-  height: 70px;
-  border-radius: 90px;
-  transition: fill 0.3s;
-}
+  /* Posición del indicador (claro/oscuro) */
+  .switch-slider.light {
+    top: 4px;
+    background-color: #2a9d8f;
+  }
 
-/* Indicador deslizante */
-.switch-slider {
-  position: absolute;
-  left: 3px;
-  width: 26px;
-  height: 26px;
-  border-radius: 90%; /* Asegura que sea un círculo */
-  background-color: white;
-  transition: transform 0.3s, top 0.3s;
-}
+  .switch-slider.dark {
+    top: 40px;
+    background-color: #264653;
+  }
 
-/* Posición del indicador (claro/oscuro) */
-.switch-slider.light {
-  top: 4px;
-  background-color: #2a9d8f;
-}
+  .switch-slider.light::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    background-image: url("../../assets/svg/u_sun.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 100%;
+    height: 100%;
+  }
 
-.switch-slider.dark {
-  top: 40px;
-  background-color: #264653;
-}
+  .switch-slider.dark::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: "";
+    background: url("../../assets/svg/u_moon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 100%;
+    height: 100%;
+  }
 
-.switch-slider.light::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  content: "";
-  background-image: url("../../assets/svg/u_sun.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
-  width: 100%;
-  height: 100%;
-}
+  /* Texto del ícono */
+  .switch-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    transition: top 0.3s;
+  }
 
-.switch-slider.dark::after {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  content: "";
-  background: url("../../assets/svg/u_moon.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 70%;
-  width: 100%;
-  height: 100%;
-}
-
-/* Texto del ícono */
-.switch-icon {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  transition: top 0.3s;
-}
-
-/* Posición del ícono (Sol/Luna) */
-.switch-icon.light {
-  top: 44px;
-}
-.switch-icon.dark {
-  top: 11px;
+  /* Posición del ícono (Sol/Luna) */
+  .switch-icon.light {
+    top: 44px;
+  }
+  .switch-icon.dark {
+    top: 11px;
+  }
 }

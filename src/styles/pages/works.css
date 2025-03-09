@@ -1,39 +1,32 @@
 .container-info {
   width: 100%;
   height: auto;
-  padding-top: var(--x1_2);
   display: grid;
   grid-template-columns: 18% 1fr;
-  padding-bottom: var(--x4);
   max-width: 100vw; /* Evita el desbordamiento horizontal */
+
 
   /* Teléfonos pequeños (hasta 480px) */
   @media (max-width: 480px) {
     grid-template-columns: 1fr;
+    padding-top: 0;
   }
 
   /* Teléfonos medianos (481px a 768px) */
   @media (min-width: 481px) and (max-width: 768px) {
     grid-template-columns: 1fr;
+    padding-top: 0;
   }
 
   /* Tablets (769px a 1024px) */
   @media (min-width: 769px) and (max-width: 998px) {
     grid-template-columns: 1fr;
+    padding-top: 0;
   }
 
   main.project__content {
-  
- 
-
-    h4 {
-  
-      margin-bottom: var(--x1_2);
-    }
-
-
     article.project__overview {
-      margin: 0 var(--x4) 0 var(--x4);
+      margin: -16px var(--x4) 0 var(--x4);
 
       /* Teléfonos pequeños (hasta 480px) */
       @media (max-width: 480px) {
@@ -51,7 +44,7 @@
       }
 
       .project__header {
-        margin-bottom: var(--x1_2);
+        margin-bottom: var(--x1);
 
         /* Teléfonos pequeños (hasta 480px) */
         @media (max-width: 480px) {
@@ -64,31 +57,33 @@
 
       section.project__info {
         .project__details {
-          margin-top: var(--x1_2);
-          margin-bottom: var(--x2);
-        }
-      }
-
-      .project__text {
-        margin-top: var(--x3);
-        .section-title {
-          margin-bottom: var(--x1_2);
-
-          .section-text {
-            margin-bottom: var(--x1_2);
-          }
-          
+          margin-top: var(--x1);
         }
       }
     }
 
     .project__gallery {
-      margin: var(--x4) 0 var(--x4) 0;
+      margin: 0 0 var(--x4) 0;
       img {
         width: 100%;
         height: auto;
-        margin-bottom: var(--x1);
+        margin-bottom: var(--d1);
       }
     }
+  }
+
+  .project__media {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+
+  }
+
+  .project__media iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78.8%;
   }
 }

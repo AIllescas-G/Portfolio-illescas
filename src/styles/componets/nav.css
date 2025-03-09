@@ -2,12 +2,10 @@
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   top: 0;
   width: 100%;
   padding: 2rem 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
   background: rgba(225, 225, 255, 0); /* Fondo negro translúcido */
   backdrop-filter: blur(15px); /* Desenfoque estilo vidrio */
@@ -15,6 +13,21 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
   z-index: 1000;
   transition: padding 0.3s ease-in-out;
+
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    padding: 2rem 0;
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding: 2rem 0;
+  }
+
+  /* Tablets (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 998px) {
+    padding: 2rem 0;
+  }
 
   &.hidden {
     transform: translateY(
@@ -32,41 +45,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-
-      li {
-        a {
-          font-size: 14px;
-          text-decoration: none;
-          transition: color 0.3s;
-          b {
-            font-weight: var(--font-weight-bold);
-            font-size: var(--font-size-s3);
-            opacity: 0.4;
-          }
-        }
-      }
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-decoration: none;
-      transition: width 0.6s ease-in-out, font-size 0.6s ease-in-out;
-    }
   }
 }
 
 .navbar.plus {
   padding: 0.9rem 4rem;
   transition: padding 0.6s ease-in-out;
+
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+    padding: 0.9rem 0;
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding: 0.9rem 0;
+  }
+
+  /* Tablets (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 998px) {
+    padding: 0.9rem 0;
+  }
 }
 
-.logo.plusLogo {
-  width: 70%;
-  transition: width 0.6s ease-in-out, font-size 0.6s ease-in-out;
+.logo{
+  color: #b7f;
+  .acent {
+    color: blueviolet;
+  }
+}
+
+a:hover {
+  text-decoration-color: #b7f;
+}
+.logo:hove {
+  text-decoration-color: #b7f;
 }

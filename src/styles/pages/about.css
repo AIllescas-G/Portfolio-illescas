@@ -1,0 +1,31 @@
+.container-about {
+  margin: 0 160px 0 160px;
+  padding-bottom: var(--x2);
+  /* Teléfonos pequeños (hasta 480px) */
+  @media (max-width: 480px) {
+   margin: 0;
+  }
+
+  /* Teléfonos medianos (481px a 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    margin: 0;
+  }
+
+  /* Tablets (769px a 1024px) */
+  @media (min-width: 769px) and (max-width: 998px) {
+    margin: 0;
+  }
+  .bio__content {
+    .bio__overview {
+      .bio__info {
+        .bio__description {
+          margin-bottom: var(--x1);
+        }
+      }
+    }
+  }
+}
+
+.bio__details {
+  margin-top: var(--x1);
+}

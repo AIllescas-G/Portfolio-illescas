@@ -7,19 +7,24 @@ export const DarkMode = () => {
 
   return (
     <div className="container md:hidden ">
-      <label className="switch " onClick={() => setDarkMode(!darkMode)}>
-        <svg>
-          <rect className="switch-bg" fill={darkMode ? "#2A9D8F" : "#264653"} />
-        </svg>
-        <div className={`switch-slider ${darkMode ? "dark" : "light"}`}></div>
-        <span className={`switch-icon ${darkMode ? "dark" : "light"}`}>
-          {darkMode ? (
-            <img src={sun} className=" opacity-30" alt="Moon icon" />
-          ) : (
-            <img src={moon} className=" opacity-30" alt="Moon icon" />
-          )}
-        </span>
-      </label>
+      <div className="switch-container">
+        <label className="switch " onClick={() => setDarkMode(!darkMode)}>
+          <svg>
+            <rect
+              className="switch-bg"
+              fill={darkMode ? "#2A9D8F" : "#264653"}
+            />
+          </svg>
+          <div className={`switch-slider ${darkMode ? "dark" : "light"}`}></div>
+          <span className={`switch-icon ${darkMode ? "dark" : "light"}`}>
+            {darkMode ? (
+              <img src={sun} className=" opacity-30" alt="Moon icon" />
+            ) : (
+              <img src={moon} className=" opacity-30" alt="Moon icon" />
+            )}
+          </span>
+        </label>
+      </div>
     </div>
   );
 };

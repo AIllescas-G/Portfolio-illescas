@@ -4,14 +4,10 @@
 @import './base/global.css';
 @import './componets/dark-mode.css';
 @import './componets/nav.css';
-@import './componets/about.css';
-@import './componets/experience.css';
-@import './componets/training.css';
-@import './componets/proyect.css';
-
-
+@import './componets/nav-proyects.css';
 
 @import './pages/home.css';
-@import './pages/go.css';
-@import './pages/moverick.css';
-@import './pages/nav-proyects.css';
+@import './pages/works.css';
+@import './pages/about.css';
+
+

@@ -17,20 +17,24 @@ h6 {
   font-family: "Geist", serif;
   font-optical-sizing: auto;
   font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-heading);
 }
 
 h1 {
   font-size: var(--font-size-h1-clamp);
   font-weight: var(--font-weight-semibold);
+  line-height: 120%;
 }
 
 h2 {
   font-size: var(--font-size-h2-clamp);
-  font-weight: var(--font-weight-medium);
+  font-weight: 500;
+  line-height: 120%;
 }
 h3 {
   font-size: var(--font-size-h3-clamp);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-heading);
 }
 h4 {
   font-size: var(--font-size-h4-clamp);
@@ -48,10 +52,11 @@ h6 {
 /* 📖 Párrafos */
 p {
   font-size: var(--font-size-p-clamp);
-  line-height: var(--line-height-base, 1.5);
+  line-height: var(--line-height-base, 1.6);
   font-weight: var(--font-weight-regular);
   letter-spacing: 0.01rem;
   margin-bottom: var(--spacing-md);
+  font-family: "Geist", serif;
 }
 
 /* 📌 Textos adicionales (según la guía NSS) */
@@ -76,7 +81,7 @@ p {
 }
 
 b {
-  font-weight: var(--font-weight-bold) !important;
+  font-weight: var(--font-weight-semibold) !important;
 }
 
 /* 💬 Utilidades de texto */
@@ -98,11 +103,11 @@ b {
 
 a {
   cursor: pointer;
+  font-weight: var( --font-weight-medium-2);
 }
 
 a:hover {
   text-decoration: underline;
-  font-weight: var(--font-weight-semibold);
 }
 
 
