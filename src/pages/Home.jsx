@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import pMoverick from "../assets/img/moverick-p.png";
@@ -6,7 +7,14 @@ import pSubbetica from "../assets/img/subbetica-por.png";
 import pIcired from "../assets/img/icired-por.png";
 
 export default function Home() {
-  
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div className="container">
       <main className="home background-space">

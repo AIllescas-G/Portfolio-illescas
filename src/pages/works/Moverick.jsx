@@ -25,7 +25,6 @@ export default function Moverick() {
 
         <main className="project__content">
           <article className="project__overview">
-            
             <header className="project__header">
               <h1 className="project__title">Moverick</h1>
             </header>
@@ -39,15 +38,12 @@ export default function Moverick() {
                 anticuados. MOVERICK nació para cambiar eso.
               </h3>
               <p className="project__details">
-                Desde el inicio, MOVERICK no solo buscaba optimizar la gestión
-                del transporte público, sino mejorar la experiencia de quienes
-                lo usan cada día. La idea era simple: que cualquier persona
-                pudiera desplazarse con confianza, con acceso inmediato a
-                información precisa sobre su próximo bus, la mejor ruta y
-                posibles cambios en el servicio. Para lograrlo, creamos un
-                ecosistema digital que conecta a operadores, conductores y
-                pasajeros a través de una app, un portal web y pantallas
-                instaladas en paradas y autobuses.
+                Desde el inicio, MOVERICK se diseñó para hacer que moverse por
+                la ciudad fuera más fácil y predecible. A través de una app, un
+                portal web y pantallas en paradas y autobuses, el sistema
+                conecta a pasajeros, conductores y operadores, proporcionando
+                información en tiempo real sobre rutas, horarios y cualquier
+                cambio en el servicio. 
               </p>
             </section>
 
@@ -129,7 +125,11 @@ export default function Moverick() {
             <img className="project__image" src={moverick1} alt="Moverick" />
             <img className="project__image" src={moverick} alt="Moverick" />
             <img className="project__image" src={moverickUno} alt="Moverick" />
-            <img className="project__image" src={movericParada} alt="Moverick" />
+            <img
+              className="project__image"
+              src={movericParada}
+              alt="Moverick"
+            />
           </aside>
 
           <article className="project__overview">

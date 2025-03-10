@@ -26,7 +26,7 @@
 
   main.project__content {
     article.project__overview {
-      margin: -16px var(--x4) 0 var(--x4);
+      margin: -16px var(--x3) 0 var(--x3);
 
       /* Teléfonos pequeños (hasta 480px) */
       @media (max-width: 480px) {

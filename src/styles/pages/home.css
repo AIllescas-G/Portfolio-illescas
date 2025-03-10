@@ -1,7 +1,7 @@
 @import "../base/variables.css";
 
 .home {
-  padding: 0 var(--x1) 0 var(--d1);
+  padding: 0 var(--d1) 0 var(--d1);
   h1.title {
     margin-bottom: var(--d1);
   }
